@@ -1,0 +1,91 @@
+body {
+    width: 600px;
+    min-height: 400px;
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.select2-container {
+    margin-bottom: 10px;
+    width: 100% !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 38px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+}
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    line-height: 38px;
+    padding-left: 12px;
+}
+
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    height: 36px;
+}
+
+.data-item {
+    transition: all 0.3s ease;
+    padding-right: 8px;
+}
+
+.data-item:hover {
+    background-color: #f8fafc;
+}
+
+.btn {
+    @apply px-4 py-2 rounded-md text-sm font-medium transition-colors duration-150;
+}
+
+.btn-primary {
+    @apply bg-blue-500 text-white hover:bg-blue-600;
+}
+
+.btn-secondary {
+    @apply bg-gray-500 text-white hover:bg-gray-600;
+}
+
+.btn-danger {
+    @apply bg-red-500 text-white hover:bg-red-600;
+}
+
+.btn-success {
+    @apply bg-green-500 text-white hover:bg-green-600;
+}
+
+.card {
+    @apply bg-white rounded-lg shadow-md p-4 mb-4;
+}
+
+.input-field {
+    width: 100%;
+    @apply w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+#dataList {
+    max-height: 300px; /* Adjust the height as needed */
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

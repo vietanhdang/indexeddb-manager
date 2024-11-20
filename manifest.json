@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "IndexedDB Manager",
+    "version": "1.0",
+    "description": "Manage IndexedDB data for any website",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "windows"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}
